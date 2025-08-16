@@ -19,5 +19,30 @@ if(age>60 && day !== "sunday" && isFestival === "no"){
     console.log("Final Ticket Price: ₹" + finalPrice);
 }
 
+// Second Question
+let amount = 200;
+let finalAmount = amount;
+let isPremiumMember = true;
+let isWeekdayBetweenEvining = true;
+let isSundayMorning = false;
+let hasUsedCoupon = false; 
+
+if(amount>1000 && isPremiumMember === true){
+    finalAmount = amount - (amount * 15/100)
+    console.log("Final Amount: ₹" + finalAmount)
+    console.log("Benefit: 15% off + Free Delivery");
+} else if (amount>=500 && amount<=1000 && isWeekdayBetweenEvining === true){
+    finalAmount = amount - 100;
+    console.log("Final Amount: ₹" + finalAmount);
+    console.log("Benefit: ₹100 off");
+} else if (amount<500 && isSundayMorning === true){
+    console.log("Final Amount: ₹" + finalAmount);
+    console.log("Benefit: Free Delivery only");
+} else {
+      console.log("Final Amount: ₹" + finalAmount);
+      console.log("No extra benefit available");
+}
+
+
 
 
