@@ -74,6 +74,50 @@ if (loan>1000000 && creditScore>800){
     console.log("No condition matched → Base Rate 10%");
 }
 
+//4th Question 
+
+let orderValue = 8000;
+let destination = "same city";
+let isPriority = true;
+let isPremiumMember1 = false;
+let isWeekend = false;
+let shippingCharge = 0;
+
+if (destination === "same city") {
+    if (isPriority && orderValue > 2000) {
+        shippingCharge = 0;
+        console.log("Free Delivery");
+    } else if (isPriority && orderValue <= 2000) {
+        shippingCharge = 50;
+        console.log("₹50 Shipping");
+    } else {
+        shippingCharge = 50;
+        console.log("₹50 Shipping");
+    }
+
+} else if (destination === "same state") {
+    if (orderValue > 5000) {
+        shippingCharge = 0;
+        console.log("Free Delivery");
+    } else {
+        shippingCharge = 100;
+        console.log("₹100 Shipping");
+    }
+
+} else if (destination === "other state") {
+    if (isPremiumMember1 && isWeekend) {
+        shippingCharge = 100;
+        console.log("₹100 Shipping");
+    } else {
+        shippingCharge = 200;
+        console.log("₹200 Shipping");
+    }
+}
+  
+
+
+
+
 
 
 
