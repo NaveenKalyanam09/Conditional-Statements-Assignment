@@ -112,6 +112,8 @@ if (destination === "same city") {
         shippingCharge = 200;
         console.log("₹200 Shipping");
     }
+}else{
+    console.log("Enter Correct Destination")
 }
   
 
