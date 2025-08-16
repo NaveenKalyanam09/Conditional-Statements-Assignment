@@ -54,24 +54,24 @@ let loanMonth = "december";
 
 if (loan>1000000 && creditScore>800){
     interestRate = 7;
-    console.log("Condition 1: Loan > 10L & Credit Score > 800 → 7%")
+    console.log("7%")
     if(isGovtEmployee){
     interestRate -= 0.5;
     console.log("Govt Employee benefit applied (-0.5%)");
 }
 } else if (loan>50000 && creditScore>=650 && creditScore<=800){
     interestRate = 9;
-    console.log("Condition 2: Credit Score between 650–800 → 9%");
+    console.log("9%");
     if (isGovtEmployee){
          interestRate -= 0.5;
         console.log("Govt Employee benefit applied (-0.5%)");
 }
 } else if (loanMonth === "december"){
     interestRate = 10 - 1;
-    console.log("Condition 3: December Festival Offer → 9%");
+    console.log("9%");
 }else {
      interestRate = 10; 
-    console.log("No condition matched → Base Rate 10%");
+    console.log("10%");
 }
 
 //4th Question 
@@ -115,6 +115,35 @@ if (destination === "same city") {
 }else{
     console.log("Enter Correct Destination")
 }
+
+// 5th Question 
+
+let gymFee = 7000;
+let isMembershipType = "gold";
+let days = 30;
+let paymentMethod = "UPI";
+
+let totalFee = gymFee;
+let cashback = 0;
+
+if(isMembershipType === "gold" && days>20 && paymentMethod==="UPI"){
+    cashback = 500;
+    totalFee = gymFee - cashback;
+    console.log(totalFee);
+}else if(isMembershipType === "silver" && days>15 && paymentMethod==="UPI"){
+    cashback = 300;
+    totalFee = gymFee - cashback;
+    console.log(totalFee);
+}else if(isMembershipType === "bronze" && days>10 && paymentMethod==="Debit card"){
+    cashback = 100;
+    totalFee = gymFee - cashback;
+    console.log(totalFee);
+}else{
+    cashback = 0;
+    totalFee = gymFee;
+    console.log("Total Amount")
+}
+
   
 
 
