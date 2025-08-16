@@ -9,16 +9,15 @@ let isStudent = "yes";
 let hasId = "yes";
 let month = "july";
 
-if(age>60){
-    if(day !== "sunday" && isFestival === "no"){
+if(age>60 && day !== "sunday" && isFestival === "no"){
        console.log(finalPrice = price - (price * 0.3));
-    }
-} else if(age<25){
-    if(isStudent === "yes" && hasId === "yes" && month !== "december"){
+} else if(age<25 && isStudent === "yes" && hasId === "yes" && month !== "december"){
         console.log(finalPrice = price - (price * 0.2));
-    }
 } else if (day === "sunday"){
     console.log(finalPrice = price - (price * 0.1));
 } else {
     console.log("Final Ticket Price: ₹" + finalPrice);
 }
+
+
+
