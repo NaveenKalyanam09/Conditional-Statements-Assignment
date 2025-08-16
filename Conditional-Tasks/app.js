@@ -44,5 +44,36 @@ if(amount>1000 && isPremiumMember === true){
 }
 
 
+// 3rd Question
+
+let loan = 1000000;
+let creditScore = 700;
+let isGovtEmployee = true; 
+let interestRate = 0; 
+let loanMonth = "december"; 
+
+if (loan>1000000 && creditScore>800){
+    interestRate = 7;
+    console.log("Condition 1: Loan > 10L & Credit Score > 800 → 7%")
+    if(isGovtEmployee){
+    interestRate -= 0.5;
+    console.log("Govt Employee benefit applied (-0.5%)");
+}
+} else if (loan>50000 && creditScore>=650 && creditScore<=800){
+    interestRate = 9;
+    console.log("Condition 2: Credit Score between 650–800 → 9%");
+    if (isGovtEmployee){
+         interestRate -= 0.5;
+        console.log("Govt Employee benefit applied (-0.5%)");
+}
+} else if (loanMonth === "december"){
+    interestRate = 10 - 1;
+    console.log("Condition 3: December Festival Offer → 9%");
+}else {
+     interestRate = 10; 
+    console.log("No condition matched → Base Rate 10%");
+}
+
+
 
 
