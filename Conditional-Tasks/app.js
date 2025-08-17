@@ -485,6 +485,86 @@ switch(bookcategory){
         console.log("Invalid book category!");
 }
 
+// 10th Question
+
+let bookingCategories = "premium";
+let noOfTickets = 2;
+let isWeekends = true;
+let ticketPrice = 0;
+let finalTicketPrice = 0;
+
+switch(bookingCategories){
+    case "standard":
+        ticketPrice = 175;
+        switch(isWeekends){
+            case true:
+                finalTicketPrice = noOfTickets  * (ticketPrice +(ticketPrice * 0.2));
+                console.log(`Category: ${bookingCategories}`);
+                console.log(`Total Amount: ₹${finalTicketPrice}`);
+                break;
+
+            case false:
+                finalTicketPrice = noOfTickets  * ticketPrice 
+                console.log(`Category: ${bookingCategories}`);
+                console.log(`Total Amount: ₹${finalTicketPrice}`);
+                break;
+        }
+        break;
+
+        case "balcony":
+        ticketPrice = 250;
+        switch(isWeekends){
+            case true:
+                finalTicketPrice = noOfTickets  * (ticketPrice +(ticketPrice * 0.2));
+                console.log(`Category: ${bookingCategories}`);
+                console.log(`Total Amount: ₹${finalTicketPrice}`);
+                break;
+
+            case false:
+                finalTicketPrice = noOfTickets  * ticketPrice 
+                console.log(`Category: ${bookingCategories}`);
+                console.log(`Total Amount: ₹${finalTicketPrice}`);
+                break;
+        }
+        break;
+
+        case "premium":
+            ticketPrice = 295;
+         switch(isWeekends){
+            case true:
+                finalTicketPrice = noOfTickets  * (ticketPrice +(ticketPrice * 0.2));
+                console.log(`Category: ${bookingCategories}`);
+                console.log(`Total Amount: ₹${finalTicketPrice}`);
+                break;
+
+            case false:
+                finalTicketPrice = noOfTickets  * ticketPrice 
+                console.log(`Category: ${bookingCategories}`);
+                console.log(`Total Amount: ₹${finalTicketPrice}`);
+                break;
+        }
+        break;
+
+        case "vip":
+            ticketPrice = 450;
+             switch(isWeekends){
+            case true:
+                finalTicketPrice = noOfTickets  * (ticketPrice +(ticketPrice * 0.2));
+                console.log(`Category: ${bookingCategories}`);
+                console.log(`Total Amount: ₹${finalTicketPrice}`);
+                break;
+
+            case false:
+                finalTicketPrice = noOfTickets  * ticketPrice 
+                console.log(`Category: ${bookingCategories}`);
+                console.log(`Total Amount: ₹${finalTicketPrice}`);
+                break;
+        }
+        break;
+
+        default:
+        console.log("Please Select Category!");
+}
 
 
 
