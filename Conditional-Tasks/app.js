@@ -307,6 +307,98 @@ switch (plan.toLowerCase()) {
 }
 
 
+// 8th Question
+
+let category = "lunch";
+let item = "chicken briyani";
+let quantity = 2;
+
+let bill = 0;
+let fullbill = 0;
+
+switch(category){
+    case "breakfast":
+        switch(item){
+            case "idly":
+                bill = 40;
+                fullbill = quantity * bill;
+                console.log(`Item: ${item}`);
+                console.log(`Quantity: ${quantity}`);
+                console.log(`Total Bill: ₹${fullbill}`);
+                break;
+
+            case "dosa":
+                bill = 65;
+                fullbill = quantity * bill;
+                console.log(`Item: ${item}`);
+                console.log(`Quantity: ${quantity}`);
+                console.log(`Total Bill: ₹${fullbill}`);
+                break;
+
+            case "egg dosa":
+                bill = 105;
+                fullbill = quantity * bill;
+                console.log(`Item: ${item}`);
+                console.log(`Quantity: ${quantity}`);
+                console.log(`Total Bill: ₹${fullbill}`);
+                break;
+
+            default:
+                console.log("Item not available in breakfast");
+        }
+        break;
+
+    case "lunch":
+        switch(item){
+            case "veg briyani":
+                bill = 300;
+                fullbill = quantity * bill;
+                console.log(`Item: ${item}`);
+                console.log(`Quantity: ${quantity}`);
+                console.log(`Total Bill: ₹${fullbill}`);
+                break;
+
+            case "chicken briyani":
+                bill = 450;
+                fullbill = quantity * bill;
+                console.log(`Item: ${item}`);
+                console.log(`Quantity: ${quantity}`);
+                console.log(`Total Bill: ₹${fullbill}`);
+                break;
+
+            default:
+                console.log("Item not available in lunch");
+        }
+        break;
+
+    case "dinner":
+        switch(item){
+            case "panner":
+                bill = 400;
+                fullbill = quantity * bill;
+                console.log(`Item: ${item}`);
+                console.log(`Quantity: ${quantity}`);
+                console.log(`Total Bill: ₹${fullbill}`);
+                break;
+
+            case "chicken 65":
+                bill = 105;
+                fullbill = quantity * bill;
+                console.log(`Item: ${item}`);
+                console.log(`Quantity: ${quantity}`);
+                console.log(`Total Bill: ₹${fullbill}`);
+                break;
+
+            default:
+                console.log("Item not available in dinner");
+        }
+        break;
+
+    default:
+        console.log("Category not available");
+}
+
+
   
 
 
