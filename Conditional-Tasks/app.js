@@ -569,7 +569,7 @@ switch(bookingCategories){
 
 //11th QUESTION
 
-let percentage = 86;
+let percentage = 44;
 let isFinalYear = true;
 
 if (percentage >= 90 && percentage <= 100){
@@ -588,6 +588,47 @@ if (percentage >= 90 && percentage <= 100){
     console.log("Fail");
 } else {
     console.log("Enter Valid Percentage");
+}
+
+
+// 12th Question 
+
+
+let experience = 15;
+let isDecember = true;
+
+if (experience > 15) {
+    if (isDecember) {
+        console.log("bonus : ₹50,000, extra ₹2000");
+    } else {
+        console.log("bonus : ₹50,000");
+    }
+} else if (experience >= 10 && experience <= 15) {
+    if (isDecember) {
+        console.log("bonus : ₹30,000, extra ₹2000");
+    } else {
+        console.log("bonus : ₹30,000");
+    }
+} else if (experience >= 5 && experience <= 9) {
+    if (isDecember) {
+        console.log("bonus : ₹20,000, extra ₹2000");
+    } else {
+        console.log("bonus : ₹20,000");
+    }
+} else if (experience >= 2 && experience <= 4) {
+    if (isDecember) {
+        console.log("bonus : ₹10,000, extra ₹2000");
+    } else {
+        console.log("bonus : ₹10,000");
+    }
+} else if (experience < 2) {
+    if (isDecember) {
+        console.log("bonus : ₹5,000, extra ₹2000");
+    } else {
+        console.log("bonus : ₹5,000");
+    }
+} else {
+    console.log("Invalid Input");
 }
 
   
