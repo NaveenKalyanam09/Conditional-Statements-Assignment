@@ -232,6 +232,81 @@ switch(cupSize+"-"+addOns){
     break;
 }
 
+
+// 7th Question
+
+let plan = "unlimited"; 
+let isSpecialWeek = false;
+
+let validityDays = 0;
+let cost = 0;
+
+switch (plan.toLowerCase()) {
+    case "talktime":
+        cost = 100;
+        switch(isSpecialWeek){
+            case true:
+                validityDays = 30;
+                break;
+            case false:
+                validityDays = 28;
+                break;
+        }
+        console.log(`Plan: ${plan}`);
+        console.log(`Cost: ₹${cost}`);
+        console.log(`Validity: ${validityDays} days`);
+        break;
+
+    case "data":
+        cost = 200;
+        switch(isSpecialWeek){
+            case true:
+                validityDays = 58;
+                break;
+            case false:
+                validityDays = 56;
+                break;
+        }
+        console.log(`Plan: ${plan}`);
+        console.log(`Cost: ₹${cost}`);
+        console.log(`Validity: ${validityDays} days`);
+        break;
+
+    case "combo":
+        cost = 600;
+        switch(isSpecialWeek){
+            case true:
+                validityDays = 86;
+                break;
+            case false:
+                validityDays = 84;
+                break;
+        }
+        console.log(`Plan: ${plan}`);
+        console.log(`Cost: ₹${cost}`);
+        console.log(`Validity: ${validityDays} days`);
+        break;
+
+    case "unlimited":
+        cost = 999;
+        switch(isSpecialWeek){
+            case true:
+                validityDays = 367;
+                break;
+            case false:
+                validityDays = 365;
+                break;
+        }
+        console.log(`Plan: ${plan}`);
+        console.log(`Cost: ₹${cost}`);
+        console.log(`Validity: ${validityDays} days`);
+        break;
+
+    default:
+        console.log("Invalid plan selected!");
+}
+
+
   
 
 
