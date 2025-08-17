@@ -572,7 +572,7 @@ switch(bookingCategories){
 let percentage = 86;
 let isFinalYear = true;
 
-if (percentage >= 90) {
+if (percentage >= 90 && percentage <= 100){
     console.log("Grade A");
 } else if (percentage >= 80 && percentage <= 89) {
     console.log("Grade B");
