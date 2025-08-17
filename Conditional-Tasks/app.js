@@ -241,7 +241,7 @@ let isSpecialWeek = false;
 let validityDays = 0;
 let cost = 0;
 
-switch (plan.toLowerCase()) {
+switch (plan) {
     case "talktime":
         cost = 100;
         switch(isSpecialWeek){
@@ -397,6 +397,95 @@ switch(category){
     default:
         console.log("Category not available");
 }
+
+
+// 9th Question
+
+let bookcategory = "fiction";
+let overdueDays = 3;
+let isStudent1 = true;
+
+let finePerDay = 0;
+let totalFine = 0;
+
+switch(bookcategory){
+    case "fiction":
+        finePerDay = 5;
+        switch(isStudent1){
+            case true:
+                totalFine = (overdueDays * finePerDay) / 2; 
+                console.log(`Book Category: ${bookcategory}`);
+                console.log(`Overdue Days: ${overdueDays}`);
+                console.log(`Total Fine: ₹${totalFine}`);
+                break;
+            case false:
+                totalFine = overdueDays * finePerDay;
+                console.log(`Book Category: ${bookcategory}`);
+                console.log(`Overdue Days: ${overdueDays}`);
+                console.log(`Total Fine: ₹${totalFine}`);
+                break;
+        }
+        break;
+
+    case "non-fiction":
+        finePerDay = 10;
+        switch(isStudent1){
+            case true:
+                totalFine = (overdueDays * finePerDay) / 2; 
+                console.log(`Book Category: ${bookcategory}`);
+                console.log(`Overdue Days: ${overdueDays}`);
+                console.log(`Total Fine: ₹${totalFine}`);
+                break;
+            case false:
+                totalFine = overdueDays * finePerDay;
+                console.log(`Book Category: ${bookcategory}`);
+                console.log(`Overdue Days: ${overdueDays}`);
+                console.log(`Total Fine: ₹${totalFine}`);
+                break;
+        }
+        break;
+
+    case "reference":
+        finePerDay = 10;
+        switch(isStudent1){
+            case true:
+                totalFine = (overdueDays * finePerDay) / 2; 
+                console.log(`Book Category: ${bookcategory}`);
+                console.log(`Overdue Days: ${overdueDays}`);
+                console.log(`Total Fine: ₹${totalFine}`);
+                break;
+            case false:
+                totalFine = overdueDays * finePerDay;
+                console.log(`Book Category: ${bookcategory}`);
+                console.log(`Overdue Days: ${overdueDays}`);
+                console.log(`Total Fine: ₹${totalFine}`);
+                break;
+        }
+        break;
+
+    case "magazine":
+        finePerDay = 3;
+        switch(isStudent1){
+            case true:
+                totalFine = (overdueDays * finePerDay) / 2; 
+                console.log(`Book Category: ${bookcategory}`);
+                console.log(`Overdue Days: ${overdueDays}`);
+                console.log(`Total Fine: ₹${totalFine}`);
+                break;
+            case false:
+                totalFine = overdueDays * finePerDay;
+                console.log(`Book Category: ${bookcategory}`);
+                console.log(`Overdue Days: ${overdueDays}`);
+                console.log(`Total Fine: ₹${totalFine}`);
+                break;
+        }
+        break;
+
+    default:
+        console.log("Invalid book category!");
+}
+
+
 
 
   
