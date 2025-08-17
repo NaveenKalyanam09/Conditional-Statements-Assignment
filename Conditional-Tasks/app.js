@@ -572,7 +572,7 @@ switch(bookingCategories){
 let percentage = 44;
 let isFinalYear = true;
 
-if (percentage >= 90 && percentage <= 100){
+if(percentage >= 90 && percentage <= 100){
     console.log("Grade A");
 } else if (percentage >= 80 && percentage <= 89) {
     console.log("Grade B");
@@ -730,6 +730,53 @@ if(purchaseAmount > 20000){
 }
 
 
+// 15th Question
 
 
+let marathonCategorizes = 1;
+let age2 = 20;
+let runcategory = "";
 
+if (marathonCategorizes < 2) {
+    runcategory = "Elite";
+    if (age2 < 18) {
+        console.log(`Runner Category: ${runcategory}`);
+        console.log(`Youth Badge`);
+    } else {
+        console.log(`Runner Category: ${runcategory}`);
+    }
+} else if (marathonCategorizes >= 2 && marathonCategorizes < 3) {
+    runcategory = "Advanced";
+    if (age2 < 18) {
+        console.log(`Runner Category: ${runcategory}`);
+        console.log(`Youth Badge`);
+    } else {
+        console.log(`Runner Category: ${runcategory}`);
+    }
+} else if (marathonCategorizes >= 3 && marathonCategorizes < 4) {
+    runcategory = "Intermediate";
+    if (age2 < 18) {
+        console.log(`Runner Category: ${runcategory}`);
+        console.log(`Youth Badge`);
+    } else {
+        console.log(`Runner Category: ${runcategory}`);
+    }
+} else if (marathonCategorizes >= 4 && marathonCategorizes < 5) {
+    runcategory = "Beginner";
+    if (age2 < 18) {
+        console.log(`Runner Category: ${runcategory}`);
+        console.log(`Youth Badge`);
+    } else {
+        console.log(`Runner Category: ${runcategory}`);
+    }
+} else if (marathonCategorizes >= 5) {
+    runcategory = "Novice";
+    if (age2 < 18) {
+        console.log(`Runner Category: ${runcategory}`);
+        console.log(`Youth Badge`);
+    } else {
+        console.log(`Runner Category: ${runcategory}`);
+    }
+} else {
+    console.log("Give correct condition");
+}
