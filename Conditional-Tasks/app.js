@@ -631,8 +631,45 @@ if (experience > 15) {
     console.log("Invalid Input");
 }
 
-  
 
+//13th Question
+
+let temperature = 25;
+let isRaining = true;
+
+if(temperature > 40){
+    if(isRaining){
+        console.log(`Extremely Hot and Rainy`);
+    }else{
+        console.log(`Extremely Hot`);
+    }
+}else if(temperature >= 30 && temperature <= 39 ){
+     if(isRaining){
+        console.log(`Hot and Rainy`);
+     }else{
+        console.log(`Hot`);
+     }
+}else if(temperature >= 20 && temperature <= 29 ){
+     if(isRaining){
+        console.log(`Warm and Rainy`);
+     }else{
+        console.log(`Warm`);
+     }
+}else if(temperature >= 10 && temperature <= 19 ){
+     if(isRaining){
+        console.log(`Cool and Rainy`);
+     }else{
+        console.log(`Cool`);
+     }
+}else if(temperature < 10){
+     if(isRaining){
+        console.log(`Cold and Rainy`);
+     }else{
+        console.log(`Cold`);
+     }
+}else{
+    console.log(`Invalid Temperature`);
+}
 
 
 
