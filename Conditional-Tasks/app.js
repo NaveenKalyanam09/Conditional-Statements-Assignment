@@ -672,6 +672,63 @@ if(temperature > 40){
 }
 
 
+// 14th Question 
+
+let purchaseAmount = 22000;
+let isBirthday = true;
+let discount = 0;
+let finalpurchaseAmount = 0;
+
+if(purchaseAmount > 20000){
+    if(isBirthday){
+        discount = purchaseAmount * (0.25 + 0.05);
+        finalpurchaseAmount = purchaseAmount - discount;
+        console.log(`purchaseAmount: ₹${finalpurchaseAmount}`);
+    }else{
+         discount = purchaseAmount * 0.25;
+         finalpurchaseAmount = purchaseAmount - discount;
+        console.log(`purchaseAmount: ₹${finalpurchaseAmount}`);
+    }
+}else if(purchaseAmount >= 15000 && purchaseAmount <= 19999){
+    if(isBirthday){
+          discount = purchaseAmount * (0.20 + 0.05);
+        finalpurchaseAmount = purchaseAmount - discount;
+        console.log(`purchaseAmount: ₹${finalpurchaseAmount}`);
+    }else{
+         discount = purchaseAmount * 0.20;
+         finalpurchaseAmount = purchaseAmount - discount;
+        console.log(`purchaseAmount: ₹${finalpurchaseAmount}`);
+    }
+}else if(purchaseAmount  >= 10000 && purchaseAmount <= 14999){
+   if(isBirthday){
+          discount = purchaseAmount * (0.15 + 0.05);
+        finalpurchaseAmount = purchaseAmount - discount;
+        console.log(`purchaseAmount: ₹${finalpurchaseAmount}`);
+    }else{
+         discount = purchaseAmount * 0.15;
+         finalpurchaseAmount = purchaseAmount - discount;
+        console.log(`purchaseAmount: ₹${finalpurchaseAmount}`);
+    }
+}else if(purchaseAmount  >= 5000 && purchaseAmount <= 9999){
+    if(isBirthday){
+          discount = purchaseAmount * (0.10 + 0.05);
+        finalpurchaseAmount = purchaseAmount - discount;
+        console.log(`purchaseAmount: ₹${finalpurchaseAmount}`);
+    }else{
+         discount = purchaseAmount * 0.10;
+         finalpurchaseAmount = purchaseAmount - discount;
+        console.log(`purchaseAmount: ₹${finalpurchaseAmount}`);
+    }
+}else if(purchaseAmount < 5000){
+    if(isBirthday){
+        console.log(`Birthday Offer apply`);
+    }else{
+        console.log(`No Discount`);
+    }
+}else{
+    console.log(`Enter Correct Information`)
+}
+
 
 
 
